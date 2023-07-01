@@ -9,6 +9,7 @@ function App() {
             <Header/>
             <Sidebar/>
             <Video/>
+            
         </div>
     )
 }
