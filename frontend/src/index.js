@@ -1,19 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
-const dotenv=require('dotenv');
+//import InfiniteScroll from "react-infinite-scroll-component";
 
+// const dotenv=require('dotenv');
 
 ReactDOM.render(<App />, document.getElementById("root"));
-dotenv.config()
-
-
-//Challenge. Render all the notes inside notes.js as a seperate Note
-//component.
-
+// dotenv.config()
 const videoCardContainer = document.querySelector(".video-container");
 
-let API_KEY = "API";
+//stores URLs for respective youtube api endpoint
+let API_KEY = "AIzaSyCDSsisKQftZqeJv9G1OTR1oa-q9hxtc-Q";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 
@@ -59,3 +56,5 @@ const makeVideoCard = (data) => {
                 </div>
             </div>`
 }
+
+
